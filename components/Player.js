@@ -68,7 +68,7 @@ function Player() {
 
   const debouncedAdjustVolume = useCallback(
     debounce((volume) => {
-      spotifyApi.setVolume(volume).catch(err => {});
+      spotifyApi.setVolume(volume).catch((err) => {});
     }, 300),
     []
   );
@@ -87,17 +87,19 @@ function Player() {
         </div>
       </div>
       {/* Center */}
-      <div className="flex items-center justify-evenly">
-        <SwitchHorizontalIcon className="button" />
-        <RewindIcon className="button" />
-        {isPlaying ? (
-          <PauseIcon className="button w-10 h-10" onClick={handlePlayPause} />
-        ) : (
-          <PlayIcon className="button w-10 h-10" onClick={handlePlayPause} />
-        )}
+      <div>
+        <div className="flex items-center justify-evenly">
+          <SwitchHorizontalIcon className="button" />
+          <RewindIcon className="button" />
+          {isPlaying ? (
+            <PauseIcon className="button w-10 h-10" onClick={handlePlayPause} />
+          ) : (
+            <PlayIcon className="button w-10 h-10" onClick={handlePlayPause} />
+          )}
 
-        <FastForwardIcon className="button" />
-        <ReplyIcon className="button" />
+          <FastForwardIcon className="button" />
+          <ReplyIcon className="button" />
+        </div>
       </div>
 
       {/* Right */}
