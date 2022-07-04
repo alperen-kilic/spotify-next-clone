@@ -2,4 +2,4 @@ This is a [Next.js](https://nextjs.org/) project created with **[Spotify API](ht
 
 ## Live Demo
 
-[Click Here](https://spotify-next-fe-clone.vercel.app/)
+[Click Here](https://spotify-next-fe-clone.vercel.app/) *(Needs Spotify client running in any device)*
